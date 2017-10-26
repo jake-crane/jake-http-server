@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const STATIC_ROOT = process.argv[2] || 'src';
+const STATIC_ROOT = process.argv[2] || __dirname + '/../public';
 const PORT = process.argv[3] || 80;
 
 // console.log(`Serving STATIC_ROOT=${STATIC_ROOT}`);
